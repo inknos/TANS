@@ -54,7 +54,7 @@ void m(){
   //sx->SetLineColor(kBlue);
   //sx->Draw();
   TF1 *funzione = new TF1("funzione", &fc, -10., 10.);
-  funzione->Draw("same");
+  //funzione->Draw("same");
   NHIST * fhc = new NHIST();
   fhc = inversion(fc, "fhc", "fhc", 100, -10., 10.);
   fhc->Draw("histsame");
